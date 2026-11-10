@@ -1,9 +1,10 @@
-const CACHE_NAME = 'st-john-school-v1';
+const CACHE_NAME = 'st-john-school-pages-v2';
+const BASE_URL = new URL('./', self.location.href).href;
 const ASSETS_TO_CACHE = [
-  '/',
-  '/index.html',
-  '/manifest.json'
-];
+  './',
+  'index.html',
+  'manifest.json'
+].map(path => new URL(path, BASE_URL).href);
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
@@ -18,7 +19,7 @@ self.addEventListener('activate', (event) => {
     caches.keys().then((keys) => {
       return Promise.all(
         keys.map((key) => {
-          if (key !== CACHE_NAME) {
+          if (key.startsWith('st-john-school-') && key !== CACHE_NAME) {
             return caches.delete(key);
           }
         })
@@ -38,7 +39,7 @@ self.addEventListener('fetch', (event) => {
         fetch(event.request).then((networkResponse) => {
           if (networkResponse && networkResponse.status === 200) {
             caches.open(CACHE_NAME).then((cache) => {
-              cache.put(event.request, networkResponse);
+              cache.put(event.request, networkResponse.clone());
             });
           }
         }).catch(() => {});
@@ -57,7 +58,7 @@ self.addEventListener('fetch', (event) => {
       }).catch(() => {
         // Fallback for HTML documents when offline
         if (event.request.headers.get('accept')?.includes('text/html')) {
-          return caches.match('/');
+          return caches.match(BASE_URL);
         }
       });
     })
