@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Plus+Jakarta+Sans:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#faf8ff;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}.material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 500,'GRAD' 0,'opsz' 24;display:inline-block;line-height:1;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-error-container": "#93000a", "primary": "#00236f", "surface-container-highest": "#dae2fd", "secondary": "#904d00", "on-secondary-fixed-variant": "#6e3900", "tertiary": "#002e44", "inverse-on-surface": "#eef0ff", "surface": "#faf8ff", "surface-bright": "#faf8ff", "tertiary-fixed": "#c9e6ff", "on-error": "#ffffff", "on-primary-fixed": "#00164e", "error-container": "#ffdad6", "error": "#ba1a1a", "on-primary-container": "#90a8ff", "inverse-primary": "#b6c4ff", "on-secondary-container": "#663500", "tertiary-container": "#004565", "on-secondary": "#ffffff", "on-background": "#131b2e", "secondary-fixed": "#ffdcc3", "outline-variant": "#c5c5d3", "on-surface-variant": "#444651", "on-primary-fixed-variant": "#264191", "secondary-fixed-dim": "#ffb77d", "surface-container-lowest": "#ffffff", "surface-variant": "#dae2fd", "primary-container": "#1e3a8a", "background": "#faf8ff", "on-tertiary-fixed-variant": "#004c6e", "surface-container-low": "#f2f3ff", "surface-container": "#eaedff", "primary-fixed": "#dce1ff", "on-primary": "#ffffff", "on-tertiary-fixed": "#001e2f", "on-tertiary": "#ffffff", "primary-fixed-dim": "#b6c4ff", "surface-tint": "#4059aa", "inverse-surface": "#283044", "surface-dim": "#d2d9f4", "on-surface": "#131b2e", "tertiary-fixed-dim": "#89ceff", "on-secondary-fixed": "#2f1500", "outline": "#757682", "secondary-container": "#fe932c", "surface-container-high": "#e2e7ff", "on-tertiary-container": "#36b6fb" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xl": "2rem", "gutter-tablet": "1.5rem", "margin-desktop": "3rem", "gutter": "1rem", "space-md": "1rem", "space-2xl": "3rem", "gutter-desktop": "2rem", "space-lg": "1.5rem", "margin": "1rem", "space-sm": "0.75rem", "space-2xs": "0.25rem", "margin-tablet": "2rem", "space-xs": "0.5rem" }, "fontFamily": { "headline-md": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "body-md": ["Inter"], "body-lg": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "label-lg": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "data-mono": ["Inter"], "body-sm": ["Inter"], "label-sm": ["Inter"], "display-lg-mobile": ["Plus Jakarta Sans"], "label-md": ["Inter"] }, "fontSize": { "headline-md": ["20px", {"lineHeight": "28px", "fontWeight": "700"}], "title-md": ["16px", {"lineHeight": "22px", "fontWeight": "600"}], "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}], "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}], "headline-sm": ["18px", {"lineHeight": "24px", "fontWeight": "600"}], "display-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800"}], "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}], "headline-lg": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700"}], "data-mono": ["13px", {"lineHeight": "18px", "letterSpacing": "-0.01em", "fontWeight": "500"}], "body-sm": ["13px", {"lineHeight": "18px", "fontWeight": "400"}], "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700"}], "display-lg-mobile": ["26px", {"lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "800"}], "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600"}] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter flex items-center justify-between"><div class="flex items-center gap-space-xs"><img alt="St. John Public School Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrCgk1pYhHfYC5loCyNFF6yZ-o6aXtp-FghKloOrGPCCvqzbiWXnCLZAK62_Dft1RemmJkaNQ8krXP6Fjc0xTBMQEPa0twQX7iX2W0XscfH5d4iirUGNNKrTuMopiWdiTeDcvIlFV7UktDOVkjcVkC6gDxPfMxHehzaiuXCt92TBkDiY-W-R92lDK52MOVIo4dAXGoTJol8yMesLb_vb_YrLFfsIML1dHutvMnDl_lN8"/><div class="flex flex-col"><span class="font-title-md text-title-md text-primary leading-tight line-clamp-1">St. John Public School</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Shukul Bazar, Amethi • CBSE Affiliated</span></div></div><div class="flex items-center gap-space-xs"><a class="flex items-center justify-center h-9 px-3 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-secondary-container transition-colors min-h-[44px]" data-path="fee-payment" href="#"><span class="material-symbols-outlined text-[18px] mr-1">payments</span>Pay Fees</a><a aria-label="Profile Portal" class="flex items-center justify-center p-1 rounded-full hover:bg-surface-container-high transition-colors min-w-[44px] min-h-[44px]" data-path="student-portal-dashboard" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuN0klU9C3iaxhmgP5ERwja6s6Eyf-7Albjj2Cc4ycuNmtWfUKLP4Sxb0K3k82se14_wy6gFo-2jq-o5voYI-VJLHrIMJroKSfLiY6yMGfedALVkmHRvxmHWQfKeZuxV_bqzqNqj-zao_IUsqUFD8yNpxPoT-cB-l1vm6TC4TBLVrNGuXfgX4Y2hz3HdKhQp7rNF7_CdUZN3UZxa21ti1O6u_QlL2ldkTvlnoEC4Q"/></a></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface px-gutter"><div class="flex flex-col w-full pb-8 space-y-space-md">
+<!-- Breadcrumb & Student Banner -->
+<section class="flex flex-col space-y-space-xs">
+<div class="flex items-center justify-between">
+<a class="inline-flex items-center gap-1 text-primary hover:text-primary-container font-label-md text-label-md py-1 px-2 rounded-lg bg-surface-container-high transition-colors" data-path="student-portal-dashboard" href="#">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span>Back to Student Portal</span>
+</a>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-highest text-primary font-label-sm text-label-sm shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+        CBSE Reg: 2132890
+      </span>
+</div>
+<!-- Student Mini-ID Plate -->
+<div class="bg-surface-container-lowest p-space-sm rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-space-xs min-w-0">
+<div class="w-11 h-11 rounded-full bg-primary-fixed flex items-center justify-center text-primary font-headline-sm text-headline-sm flex-shrink-0 shadow-inner">
+          PT
+        </div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="font-title-md text-title-md text-on-surface truncate">Priyanshu Tiwari</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-primary font-label-sm text-label-sm font-semibold">11th-B (Sci)</span>
+</div>
+<span class="font-data-mono text-data-mono text-on-surface-variant truncate">Roll #24 • Scholar: 2023-SJ-408</span>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0 pl-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Academic Year</span>
+<span class="font-label-md text-label-md text-primary font-bold">2024-25</span>
+</div>
+</div>
+</section>
+<!-- Title & Key Metric Bento Card -->
+<section class="bg-gradient-to-br from-primary via-primary-container to-tertiary-container rounded-2xl p-space-md text-on-primary shadow-md relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 w-36 h-36 rounded-full bg-white/5 pointer-events-none blur-xl"></div>
+<div class="flex items-start justify-between relative z-10">
+<div>
+<div class="flex items-center gap-2">
+<h1 class="font-headline-md text-headline-md font-bold tracking-tight text-on-primary">Fee Ledger &amp; History</h1>
+</div>
+<p class="font-body-sm text-body-sm text-surface-container-high mt-0.5">Comprehensive audit trail of institutional dues &amp; receipts</p>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-200 font-label-sm text-label-sm font-semibold backdrop-blur-sm">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+        All Cleared
+      </span>
+</div>
+<!-- Metric Ribbon -->
+<div class="grid grid-cols-3 gap-2 mt-space-md pt-space-xs">
+<div class="bg-white/10 backdrop-blur-md rounded-xl p-2.5 flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-surface-variant uppercase tracking-wider">Annual Dues</span>
+<span class="font-title-md text-title-md font-bold text-on-primary mt-1">₹19,400</span>
+<span class="font-label-sm text-label-sm text-surface-container-high">4 Quarters</span>
+</div>
+<div class="bg-white/10 backdrop-blur-md rounded-xl p-2.5 flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-surface-variant uppercase tracking-wider">Total Paid</span>
+<span class="font-title-md text-title-md font-bold text-emerald-300 mt-1">₹19,400</span>
+<span class="font-label-sm text-label-sm text-emerald-200 font-medium">100% Settled</span>
+</div>
+<div class="bg-white/10 backdrop-blur-md rounded-xl p-2.5 flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-surface-variant uppercase tracking-wider">Balance</span>
+<span class="font-title-md text-title-md font-bold text-on-primary mt-1">₹0.00</span>
+<span class="font-label-sm text-label-sm text-emerald-300 font-medium">No Due Slip</span>
+</div>
+</div>
+<!-- Quick Action / 80C Tax Certificate -->
+<div class="mt-space-md pt-3 flex items-center justify-between gap-2">
+<button class="w-full flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl bg-secondary text-on-secondary font-label-md text-label-md hover:bg-secondary-container transition-all active:scale-[0.98] shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">policy</span>
+<span>Download 80C Tax Certificate (PDF)</span>
+</button>
+</div>
+</section>
+<!-- Session Tabs / Academic History Switcher -->
+<section class="flex flex-col space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Select Session</span>
+<span class="font-label-sm text-label-sm text-primary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">history</span>
+        3 Academic Years
+      </span>
+</div>
+<div class="flex items-center gap-2 overflow-x-auto pb-1 no-scrollbar">
+<button class="flex-shrink-0 px-3.5 py-1.5 rounded-full bg-primary text-on-primary font-label-md text-label-md font-semibold shadow-sm flex items-center gap-1.5" type="button">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed"></span>
+<span>2024-25 (Current • XI)</span>
+</button>
+<button class="flex-shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md font-medium transition-colors" type="button">
+<span>2023-24 (Class X)</span>
+</button>
+<button class="flex-shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md font-medium transition-colors" type="button">
+<span>2022-23 (Class IX)</span>
+</button>
+</div>
+</section>
+<!-- Session Ledger Breakdown List -->
+<section class="flex flex-col space-y-space-sm">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[20px]">receipt_long</span>
+        Quarterly Ledger (2024–25)
+      </h2>
+<span class="text-label-sm font-label-sm text-on-surface-variant">4 of 4 Settled</span>
+</div>
+<!-- Quarter 4 Card: Just Settled with Full Detailed Drawer -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm space-y-space-sm">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md font-bold text-on-surface">Quarter 4</span>
+<span class="px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600 animate-pulse"></span>
+              PAID &amp; SETTLED
+            </span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Period: Jan 2025 – Mar 2025</span>
+</div>
+<div class="text-right">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">₹4,850.00</span>
+<span class="block font-label-sm text-label-sm text-emerald-700 font-medium">Reconciled</span>
+</div>
+</div>
+<!-- Transaction Meta Grid -->
+<div class="bg-surface-container-low rounded-xl p-space-sm grid grid-cols-2 gap-2 text-on-surface-variant">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant/70">Payment Mode</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[16px] text-primary">qr_code_2</span>
+            UPI (SBI ePay)
+          </span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant/70">Paid Timestamp</span>
+<span class="font-data-mono text-data-mono font-medium text-on-surface mt-0.5">Today, 11:26 AM</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant/70">Receipt Number</span>
+<span class="font-data-mono text-data-mono text-primary font-bold mt-0.5">#SJ-2025-Q4-9412</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant/70">Bank Ref (UTR)</span>
+<span class="font-data-mono text-data-mono text-on-surface font-medium truncate mt-0.5">402819481239</span>
+</div>
+</div>
+<!-- Itemized Fees Accordion Block -->
+<div class="bg-surface rounded-xl p-space-xs space-y-1.5">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm px-1 font-semibold uppercase tracking-wider">
+<span>Fee Head</span>
+<span>Amount</span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm text-on-surface px-1">
+<span class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary/40"></span>
+            Composite Tuition Fee
+          </span>
+<span class="font-data-mono text-data-mono font-medium">₹3,200.00</span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm text-on-surface px-1">
+<span class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary/40"></span>
+            Science Laboratory &amp; Practicals
+          </span>
+<span class="font-data-mono text-data-mono font-medium">₹850.00</span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm text-on-surface px-1">
+<span class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary/40"></span>
+            Term Examination &amp; LMS Portal
+          </span>
+<span class="font-data-mono text-data-mono font-medium">₹500.00</span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm text-on-surface px-1">
+<span class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary/40"></span>
+            Sports &amp; Physical Education Fund
+          </span>
+<span class="font-data-mono text-data-mono font-medium">₹300.00</span>
+</div>
+</div>
+<!-- Actions -->
+<div class="grid grid-cols-2 gap-2 pt-1">
+<button class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Receipt PDF</span>
+</button>
+<button class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-emerald-600">send</span>
+<span>WhatsApp Slip</span>
+</button>
+</div>
+</div>
+<!-- Quarter 3 Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm space-y-space-xs">
+<div class="flex items-start justify-between">
+<div>
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md font-bold text-on-surface">Quarter 3</span>
+<span class="px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+              PAID &amp; VERIFIED
+            </span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Period: Oct 2024 – Dec 2024</span>
+</div>
+<div class="text-right">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">₹4,850.00</span>
+<span class="block font-data-mono text-label-sm text-on-surface-variant">08 Oct 2024</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant bg-surface-container-low px-3 py-2 rounded-xl text-data-mono font-data-mono">
+<span class="truncate">Ref: #SJ-2024-Q3-8841</span>
+<span class="text-on-surface font-medium">NetBanking (SBI)</span>
+</div>
+<div class="flex items-center gap-2 pt-1">
+<button class="flex-1 flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-surface-container text-primary font-label-md text-label-md hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+<span>Download PDF</span>
+</button>
+<button class="px-3 py-2 rounded-xl bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>View</span>
+</button>
+</div>
+</div>
+<!-- Quarter 2 Card (Offline Bank Scroll) -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm space-y-space-xs">
+<div class="flex items-start justify-between">
+<div>
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md font-bold text-on-surface">Quarter 2</span>
+<span class="px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+              PAID &amp; VERIFIED
+            </span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Period: Jul 2024 – Sep 2024</span>
+</div>
+<div class="text-right">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">₹4,850.00</span>
+<span class="block font-data-mono text-label-sm text-on-surface-variant">12 Jul 2024</span>
+</div>
+</div>
+<div class="bg-surface-container-low px-3 py-2 rounded-xl flex items-center justify-between text-on-surface-variant text-data-mono font-data-mono">
+<span class="truncate">Scroll #184 • Baroda UP Gramin Bank</span>
+<span class="text-on-surface font-medium">Bank Challan</span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-data-mono text-label-sm text-on-surface-variant">Receipt: #SJ-2024-Q2-7612</span>
+<button class="flex items-center gap-1.5 py-1.5 px-3 rounded-lg bg-surface-container text-primary font-label-md text-label-md hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span>Receipt</span>
+</button>
+</div>
+</div>
+<!-- Quarter 1 Card (Session Start & Reg) -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm space-y-space-xs">
+<div class="flex items-start justify-between">
+<div>
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md font-bold text-on-surface">Quarter 1</span>
+<span class="px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+              PAID &amp; VERIFIED
+            </span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Period: Apr 2024 – Jun 2024</span>
+</div>
+<div class="text-right">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">₹4,850.00</span>
+<span class="block font-data-mono text-label-sm text-on-surface-variant">05 Apr 2024</span>
+</div>
+</div>
+<div class="bg-surface-container-low px-3 py-2 rounded-xl flex items-center justify-between text-on-surface-variant text-data-mono font-data-mono">
+<span class="truncate">UPI: PhonePe • Txn ID: 9028120</span>
+<span class="text-on-surface font-medium font-label-sm">Session Start</span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-data-mono text-label-sm text-on-surface-variant">Receipt: #SJ-2024-Q1-6109</span>
+<button class="flex items-center gap-1.5 py-1.5 px-3 rounded-lg bg-surface-container text-primary font-label-md text-label-md hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span>Receipt</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Previous Academic Sessions Archive -->
+<section class="bg-surface-container-low rounded-2xl p-space-md space-y-space-xs shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">archive</span>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Past Academic Records</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Class 10th (Session 2023-24)</p>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">
+        Archived
+      </span>
+</div>
+<div class="p-3 bg-surface-container-lowest rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</div>
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface block">CBSE Class X Clearance NOC</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Cleared on 24 Mar 2024 • Seal Verified</span>
+</div>
+</div>
+<button aria-label="Download NOC" class="p-2 rounded-lg bg-surface-container text-primary hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+<button class="w-full flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl bg-surface-container text-primary font-label-md text-label-md hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">history_edu</span>
+<span>Download Consolidated No-Dues Certificate</span>
+</button>
+</section>
+<!-- Accounts Desk & CBSE Guidance Footer Card -->
+<section class="bg-surface-container-lowest rounded-2xl p-space-md space-y-space-sm shadow-sm">
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary-fixed flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">support_agent</span>
+</div>
+<div class="space-y-1">
+<h4 class="font-title-md text-title-md text-on-surface font-bold">Accounts &amp; Fee Policy Desk</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Fee structures strictly comply with CBSE Affiliation Byelaws. For discrepancies or GST/IT Tax rebate queries, contact the Bursar.
+        </p>
+</div>
+</div>
+<!-- Official Contacts Strip -->
+<div class="bg-surface-container-low rounded-xl p-3 space-y-2">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">call</span>
+          Fee Desk Direct:
+        </span>
+<a class="font-data-mono text-data-mono font-bold text-primary hover:underline" href="tel:+919452022781">+91 94520-22781</a>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">schedule</span>
+          Office Hours:
+        </span>
+<span class="text-on-surface font-medium">08:30 AM – 02:30 PM (Mon-Sat)</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">pin_drop</span>
+          Campus:
+        </span>
+<span class="text-on-surface font-medium truncate">Shukul Bazar, Amethi (UP)</span>
+</div>
+</div>
+<!-- Institutional Disclaimer -->
+<p class="font-label-sm text-label-sm text-on-surface-variant text-center pt-1">
+      St. John Public School • Affiliation #2132890 • Official Digital Ledger Record
+    </p>
+</section>
+</div>
+<script>
+  // Simple micro-interaction for receipt toast confirmation
+  document.querySelectorAll('button').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      const text = btn.innerText.trim();
+      if (text.includes('Receipt') || text.includes('Certificate') || text.includes('Download') || text.includes('Slip')) {
+        const ripple = document.createElement('span');
+        ripple.className = 'fixed bottom-20 left-1/2 transform -translate-x-1/2 bg-primary text-on-primary font-label-md text-label-md px-4 py-2 rounded-full shadow-lg z-50 flex items-center gap-2 animate-bounce';
+        ripple.innerHTML = '<span class="material-symbols-outlined text-[18px]">verified</span> Preparing Official Signed Document...';
+        document.body.appendChild(ripple);
+        setTimeout(() => {
+          ripple.remove();
+        }, 2200);
+      }
+    });
+  });
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-16 px-space-2xs"><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-1 py-1 text-on-surface-variant transition-colors hover:text-primary" data-path="public-home" href="#"><span class="material-symbols-outlined text-[24px]">school</span><span class="font-label-sm text-label-sm mt-0.5">Public</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-1 py-1 text-on-surface-variant transition-colors hover:text-primary" data-path="toppers-gallery" href="#"><span class="material-symbols-outlined text-[24px]">emoji_events</span><span class="font-label-sm text-label-sm mt-0.5">Toppers</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-1 py-1 text-on-surface-variant transition-colors hover:text-primary" data-path="fee-payment" href="#"><span class="material-symbols-outlined text-[24px]">receipt_long</span><span class="font-label-sm text-label-sm mt-0.5">Fees</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-1 py-1 text-on-surface-variant transition-colors hover:text-primary" data-path="student-portal-dashboard" href="#"><span class="material-symbols-outlined text-[24px]">badge</span><span class="font-label-sm text-label-sm mt-0.5">Student</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-1 py-1 text-on-surface-variant transition-colors hover:text-primary" data-path="admin-center" href="#"><span class="material-symbols-outlined text-[24px]">admin_panel_settings</span><span class="font-label-sm text-label-sm mt-0.5">Admin</span></a></div></nav></body></html>

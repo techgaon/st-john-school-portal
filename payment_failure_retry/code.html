@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Plus+Jakarta+Sans:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#faf8ff;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}.material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 500,'GRAD' 0,'opsz' 24;display:inline-block;line-height:1;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-error-container": "#93000a", "primary": "#00236f", "surface-container-highest": "#dae2fd", "secondary": "#904d00", "on-secondary-fixed-variant": "#6e3900", "tertiary": "#002e44", "inverse-on-surface": "#eef0ff", "surface": "#faf8ff", "surface-bright": "#faf8ff", "tertiary-fixed": "#c9e6ff", "on-error": "#ffffff", "on-primary-fixed": "#00164e", "error-container": "#ffdad6", "error": "#ba1a1a", "on-primary-container": "#90a8ff", "inverse-primary": "#b6c4ff", "on-secondary-container": "#663500", "tertiary-container": "#004565", "on-secondary": "#ffffff", "on-background": "#131b2e", "secondary-fixed": "#ffdcc3", "outline-variant": "#c5c5d3", "on-surface-variant": "#444651", "on-primary-fixed-variant": "#264191", "secondary-fixed-dim": "#ffb77d", "surface-container-lowest": "#ffffff", "surface-variant": "#dae2fd", "primary-container": "#1e3a8a", "background": "#faf8ff", "on-tertiary-fixed-variant": "#004c6e", "surface-container-low": "#f2f3ff", "surface-container": "#eaedff", "primary-fixed": "#dce1ff", "on-primary": "#ffffff", "on-tertiary-fixed": "#001e2f", "on-tertiary": "#ffffff", "primary-fixed-dim": "#b6c4ff", "surface-tint": "#4059aa", "inverse-surface": "#283044", "surface-dim": "#d2d9f4", "on-surface": "#131b2e", "tertiary-fixed-dim": "#89ceff", "on-secondary-fixed": "#2f1500", "outline": "#757682", "secondary-container": "#fe932c", "surface-container-high": "#e2e7ff", "on-tertiary-container": "#36b6fb" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xl": "2rem", "gutter-tablet": "1.5rem", "margin-desktop": "3rem", "gutter": "1rem", "space-md": "1rem", "space-2xl": "3rem", "gutter-desktop": "2rem", "space-lg": "1.5rem", "margin": "1rem", "space-sm": "0.75rem", "space-2xs": "0.25rem", "margin-tablet": "2rem", "space-xs": "0.5rem" }, "fontFamily": { "headline-md": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "body-md": ["Inter"], "body-lg": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "label-lg": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "data-mono": ["Inter"], "body-sm": ["Inter"], "label-sm": ["Inter"], "display-lg-mobile": ["Plus Jakarta Sans"], "label-md": ["Inter"] }, "fontSize": { "headline-md": ["20px", {"lineHeight": "28px", "fontWeight": "700"}], "title-md": ["16px", {"lineHeight": "22px", "fontWeight": "600"}], "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}], "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}], "headline-sm": ["18px", {"lineHeight": "24px", "fontWeight": "600"}], "display-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800"}], "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}], "headline-lg": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700"}], "data-mono": ["13px", {"lineHeight": "18px", "letterSpacing": "-0.01em", "fontWeight": "500"}], "body-sm": ["13px", {"lineHeight": "18px", "fontWeight": "400"}], "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700"}], "display-lg-mobile": ["26px", {"lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "800"}], "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600"}] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter flex items-center justify-between"><div class="flex items-center gap-space-xs"><img alt="St. John Public School Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrCgk1pYhHfYC5loCyNFF6yZ-o6aXtp-FghKloOrGPCCvqzbiWXnCLZAK62_Dft1RemmJkaNQ8krXP6Fjc0xTBMQEPa0twQX7iX2W0XscfH5d4iirUGNNKrTuMopiWdiTeDcvIlFV7UktDOVkjcVkC6gDxPfMxHehzaiuXCt92TBkDiY-W-R92lDK52MOVIo4dAXGoTJol8yMesLb_vb_YrLFfsIML1dHutvMnDl_lN8"/><div class="flex flex-col"><span class="font-title-md text-title-md text-primary leading-tight line-clamp-1">St. John Public School</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Shukul Bazar, Amethi • CBSE Affiliated</span></div></div><div class="flex items-center gap-space-xs"><a class="flex items-center justify-center h-9 px-3 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-secondary-container transition-colors min-h-[44px]" data-path="fee-payment" href="#"><span class="material-symbols-outlined text-[18px] mr-1">payments</span>Pay Fees</a><a aria-label="Profile Portal" class="flex items-center justify-center p-1 rounded-full hover:bg-surface-container-high transition-colors min-w-[44px] min-h-[44px]" data-path="student-portal-dashboard" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuN0klU9C3iaxhmgP5ERwja6s6Eyf-7Albjj2Cc4ycuNmtWfUKLP4Sxb0K3k82se14_wy6gFo-2jq-o5voYI-VJLHrIMJroKSfLiY6yMGfedALVkmHRvxmHWQfKeZuxV_bqzqNqj-zao_IUsqUFD8yNpxPoT-cB-l1vm6TC4TBLVrNGuXfgX4Y2hz3HdKhQp7rNF7_CdUZN3UZxa21ti1O6u_QlL2ldkTvlnoEC4Q"/></a></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface px-gutter"><div class="flex flex-col w-full pb-8">
+<!-- Top Navigation & Alert Status Bar -->
+<div class="flex items-center justify-between py-space-xs">
+<a class="inline-flex items-center gap-1 font-label-md text-label-md text-primary font-semibold py-1.5 px-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors" data-path="fee-payment" href="#">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span>Back to Fees</span>
+</a>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">error</span>
+<span>Transaction Failed</span>
+</div>
+</div>
+<!-- Reassuring Failure Hero Card -->
+<div class="mt-space-sm bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col items-center text-center relative overflow-hidden">
+<!-- Subtle Ambient Accent Flare -->
+<div class="absolute -top-12 -right-12 w-28 h-28 bg-error-container/40 rounded-full blur-xl pointer-events-none"></div>
+<div class="absolute -bottom-10 -left-10 w-24 h-24 bg-surface-container-high/60 rounded-full blur-lg pointer-events-none"></div>
+<!-- Stylized Error Icon with Pulse Aura -->
+<div class="relative flex items-center justify-center w-16 h-16 rounded-full bg-error-container/70 text-error mb-space-sm">
+<span class="material-symbols-outlined text-[36px]" style="font-variation-settings: 'FILL' 1, 'wght' 600;">cancel</span>
+<span class="absolute inset-0 rounded-full bg-error/10 animate-ping"></span>
+</div>
+<!-- Heading Hierarchy -->
+<h1 class="font-headline-lg text-headline-lg text-on-surface">Payment Unsuccessful</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+      Your bank could not complete the fee installment of <span class="font-semibold text-on-surface">₹4,850</span>.
+    </p>
+<!-- Peace-of-Mind Guarantee Pill -->
+<div class="mt-space-sm w-full bg-surface-container-low rounded-lg p-space-sm flex items-start gap-2.5 text-left">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<div class="flex-1">
+<p class="font-label-md text-label-md text-on-surface font-semibold">Your funds are safe</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+          No balance was deducted from your account. If temporarily debited, your bank will auto-refund the full amount within 2–4 business days.
+        </p>
+</div>
+</div>
+</div>
+<!-- Diagnostic Breakdown Card -->
+<div class="mt-space-md bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between pb-space-xs mb-space-xs">
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-primary text-[20px]">receipt_long</span>
+<h2 class="font-title-md text-title-md">Diagnostic Breakdown</h2>
+</div>
+<span class="font-data-mono text-data-mono bg-error-container text-on-error-container px-2 py-0.5 rounded text-[11px] font-semibold">ERR_BANK_TIMEOUT_U30</span>
+</div>
+<!-- Student Quick Pill -->
+<div class="bg-surface-container-low rounded-lg p-space-xs flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2 min-w-0">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-bold text-[12px] shrink-0">
+          PT
+        </div>
+<div class="min-w-0">
+<p class="font-label-md text-label-md text-on-surface truncate">Priyanshu Tiwari</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">Class 11th - Science • Roll #24</p>
+</div>
+</div>
+<span class="font-data-mono text-data-mono text-on-surface-variant text-[11px] px-2 py-1 bg-surface-container rounded shrink-0">PRI082010</span>
+</div>
+<!-- Key-Value Diagnostic Pairs -->
+<div class="space-y-space-xs">
+<div class="flex justify-between items-center py-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Fee Purpose</span>
+<span class="font-label-md text-label-md text-on-surface">Quarter 4 Tuition &amp; Lab Fees</span>
+</div>
+<div class="flex justify-between items-center py-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Order Reference</span>
+<span class="font-data-mono text-data-mono text-primary font-semibold">#SJ-2025-Q4-9412</span>
+</div>
+<div class="flex justify-between items-center py-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Attempted Channel</span>
+<span class="font-label-md text-label-md text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">account_balance_wallet</span>
+          Instant UPI (PhonePe / GPay)
+        </span>
+</div>
+<div class="flex justify-between items-center py-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Failure Reason</span>
+<span class="font-label-md text-label-md text-error font-medium text-right max-w-[55%]">Bank Server Timed Out</span>
+</div>
+<div class="flex justify-between items-center py-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Recorded Time</span>
+<span class="font-data-mono text-data-mono text-on-surface-variant">Today, 11:28 AM IST</span>
+</div>
+</div>
+</div>
+<!-- Primary Instant Retry Action Zone -->
+<div class="mt-space-md space-y-space-xs">
+<button class="w-full h-12 bg-secondary text-on-secondary rounded-lg font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-md active:scale-[0.99] transition-transform" id="retry-btn">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+<span>Retry UPI Payment (₹4,850)</span>
+</button>
+<button class="w-full h-11 bg-surface-container-high text-primary rounded-lg font-label-md text-label-md flex items-center justify-center gap-1.5 active:bg-surface-container-highest transition-colors" id="change-mode-btn">
+<span class="material-symbols-outlined text-[18px]">credit_card</span>
+<span>Change Payment Mode (Cards / NetBanking)</span>
+</button>
+</div>
+<!-- Alternative Immediate Channels -->
+<div class="mt-space-lg">
+<div class="flex items-center justify-between mb-space-xs">
+<h3 class="font-title-md text-title-md text-on-surface">Recommended Alternatives</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Fast &amp; High Success</span>
+</div>
+<div class="space-y-space-xs">
+<!-- NetBanking Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-sm flex items-center justify-between shadow-sm cursor-pointer hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[22px]">account_balance</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<p class="font-label-lg text-label-lg text-on-surface">NetBanking (Direct Bank)</p>
+<span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-surface-container-highest text-primary">99.8% Success</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">SBI, HDFC, ICICI, Baroda UP Gramin</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[20px]">chevron_right</span>
+</div>
+<!-- Static QR Code Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-sm flex items-center justify-between shadow-sm cursor-pointer hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed shrink-0">
+<span class="material-symbols-outlined text-[22px]">qr_code_scanner</span>
+</div>
+<div>
+<p class="font-label-lg text-label-lg text-on-surface">Official School Merchant QR</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Scan easily from another parent or family phone</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[20px]">chevron_right</span>
+</div>
+<!-- Offline Challan -->
+<div class="bg-surface-container-lowest rounded-xl p-space-sm flex items-center justify-between shadow-sm cursor-pointer hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed shrink-0">
+<span class="material-symbols-outlined text-[22px]">description</span>
+</div>
+<div>
+<p class="font-label-lg text-label-lg text-on-surface">Download Offline Bank Challan</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Pay cash at School Fee Counter or Baroda UP Gramin Bank</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[20px]">download</span>
+</div>
+</div>
+</div>
+<!-- Accounts Helpdesk & Rural Parent Escalation -->
+<div class="mt-space-lg bg-primary-container text-on-primary rounded-xl p-space-md shadow-md relative overflow-hidden">
+<!-- Subtle Emblem Watermark -->
+<div class="absolute -right-4 -bottom-6 opacity-10 text-on-primary pointer-events-none">
+<span class="material-symbols-outlined text-[120px]">support_agent</span>
+</div>
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-secondary-container text-[20px]">support_agent</span>
+<h3 class="font-title-md text-title-md font-semibold text-white">Need Help? Accounts Helpdesk</h3>
+</div>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim">
+      Facing repeated bank failures in Shukul Bazar? Our school accounts staff is available to verify bank receipts or register manual reconciliation.
+    </p>
+<!-- Immediate Contact Touchpoints -->
+<div class="mt-space-sm grid grid-cols-2 gap-space-xs">
+<a class="flex items-center gap-2 p-2 bg-on-primary/10 hover:bg-on-primary/20 rounded-lg text-white font-label-md text-label-md transition-colors" href="tel:+919452022781">
+<span class="material-symbols-outlined text-secondary-container text-[18px]">call</span>
+<span class="truncate">Call Accounts</span>
+</a>
+<a class="flex items-center gap-2 p-2 bg-on-primary/10 hover:bg-on-primary/20 rounded-lg text-white font-label-md text-label-md transition-colors" href="https://wa.me/919876543210" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-secondary-container text-[18px]">chat</span>
+<span class="truncate">WhatsApp Slip</span>
+</a>
+</div>
+<!-- Quick Issue Report Button -->
+<button class="mt-space-sm w-full py-2 bg-surface/10 hover:bg-surface/20 text-white rounded-lg font-label-sm text-label-sm flex items-center justify-center gap-1 transition-colors" id="report-issue-btn">
+<span class="material-symbols-outlined text-[16px]">flag</span>
+<span>Report Unresolved Transaction (#SJ-2025-Q4-9412)</span>
+</button>
+</div>
+<!-- Interactive Modal Bottom Sheet for Instant Mode Switch (Hidden by default) -->
+<div class="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm hidden flex-col justify-end" id="mode-drawer">
+<div class="bg-surface-container-lowest rounded-t-2xl p-space-md max-h-[751px] flex flex-col shadow-2xl">
+<div class="w-10 h-1 bg-outline-variant rounded-full mx-auto mb-space-sm"></div>
+<div class="flex items-center justify-between pb-space-xs border-b border-surface-container">
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Select Payment Gateway</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Fee Installment: ₹4,850</p>
+</div>
+<button class="p-1.5 rounded-full text-on-surface-variant hover:bg-surface-container" id="close-drawer-btn">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="py-space-md space-y-space-xs">
+<label class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low cursor-pointer">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">qr_code_2</span>
+<div>
+<p class="font-label-lg text-label-lg text-on-surface">Google Pay / PhonePe / Paytm</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">UPI VPA Instant Redirection</p>
+</div>
+</div>
+<input checked="" class="w-4 h-4 text-primary" name="payment_mode" type="radio"/>
+</label>
+<label class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low cursor-pointer">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">account_balance</span>
+<div>
+<p class="font-label-lg text-label-lg text-on-surface">Baroda UP Gramin / State Bank Portal</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Zero Gateway Convenience Fee</p>
+</div>
+</div>
+<input class="w-4 h-4 text-primary" name="payment_mode" type="radio"/>
+</label>
+<label class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low cursor-pointer">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary">credit_card</span>
+<div>
+<p class="font-label-lg text-label-lg text-on-surface">RuPay / Visa / Master Debit Card</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">OTP verified card debit</p>
+</div>
+</div>
+<input class="w-4 h-4 text-primary" name="payment_mode" type="radio"/>
+</label>
+</div>
+<button class="w-full h-12 bg-primary text-on-primary rounded-lg font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-md" id="confirm-mode-btn">
+<span>Proceed with Selected Gateway</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const retryBtn = document.getElementById('retry-btn');
+    const changeModeBtn = document.getElementById('change-mode-btn');
+    const modeDrawer = document.getElementById('mode-drawer');
+    const closeDrawerBtn = document.getElementById('close-drawer-btn');
+    const confirmModeBtn = document.getElementById('confirm-mode-btn');
+    const reportIssueBtn = document.getElementById('report-issue-btn');
+
+    // Instant Retry Feedback Animation
+    if (retryBtn) {
+      retryBtn.addEventListener('click', function() {
+        const originalContent = this.innerHTML;
+        this.disabled = true;
+        this.innerHTML = '<span class="material-symbols-outlined text-[20px] animate-spin">refresh</span><span>Connecting to Bank Gateway...</span>';
+        setTimeout(() => {
+          this.disabled = false;
+          this.innerHTML = originalContent;
+          alert('Re-initiating secure UPI session with St. John Public School gateway...');
+        }, 1200);
+      });
+    }
+
+    // Modal Drawer Toggle
+    if (changeModeBtn && modeDrawer) {
+      changeModeBtn.addEventListener('click', () => {
+        modeDrawer.classList.remove('hidden');
+        modeDrawer.classList.add('flex');
+      });
+    }
+
+    if (closeDrawerBtn && modeDrawer) {
+      closeDrawerBtn.addEventListener('click', () => {
+        modeDrawer.classList.add('hidden');
+        modeDrawer.classList.remove('flex');
+      });
+    }
+
+    if (confirmModeBtn && modeDrawer) {
+      confirmModeBtn.addEventListener('click', () => {
+        modeDrawer.classList.add('hidden');
+        modeDrawer.classList.remove('flex');
+        alert('Redirecting to selected financial institution portal...');
+      });
+    }
+
+    // Quick Issue Reporting with Toast confirmation
+    if (reportIssueBtn) {
+      reportIssueBtn.addEventListener('click', () => {
+        alert('Reference #SJ-2025-Q4-9412 logged. Accounts clerk at Shukul Bazar counter has received your transaction timestamp.');
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-16 px-space-2xs"><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-1 py-1 text-on-surface-variant transition-colors hover:text-primary" data-path="public-home" href="#"><span class="material-symbols-outlined text-[24px]">school</span><span class="font-label-sm text-label-sm mt-0.5">Public</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-1 py-1 text-on-surface-variant transition-colors hover:text-primary" data-path="toppers-gallery" href="#"><span class="material-symbols-outlined text-[24px]">emoji_events</span><span class="font-label-sm text-label-sm mt-0.5">Toppers</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-1 py-1 text-on-surface-variant transition-colors hover:text-primary" data-path="fee-payment" href="#"><span class="material-symbols-outlined text-[24px]">receipt_long</span><span class="font-label-sm text-label-sm mt-0.5">Fees</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-1 py-1 text-on-surface-variant transition-colors hover:text-primary" data-path="student-portal-dashboard" href="#"><span class="material-symbols-outlined text-[24px]">badge</span><span class="font-label-sm text-label-sm mt-0.5">Student</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-1 py-1 text-on-surface-variant transition-colors hover:text-primary" data-path="admin-center" href="#"><span class="material-symbols-outlined text-[24px]">admin_panel_settings</span><span class="font-label-sm text-label-sm mt-0.5">Admin</span></a></div></nav></body></html>

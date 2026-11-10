@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#faf8ff;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}.material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 500,'GRAD' 0,'opsz' 24;display:inline-block;line-height:1;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-error-container": "#93000a", "primary": "#00236f", "surface-container-highest": "#dae2fd", "secondary": "#904d00", "on-secondary-fixed-variant": "#6e3900", "tertiary": "#002e44", "inverse-on-surface": "#eef0ff", "surface": "#faf8ff", "surface-bright": "#faf8ff", "tertiary-fixed": "#c9e6ff", "on-error": "#ffffff", "on-primary-fixed": "#00164e", "error-container": "#ffdad6", "error": "#ba1a1a", "on-primary-container": "#90a8ff", "inverse-primary": "#b6c4ff", "on-secondary-container": "#663500", "tertiary-container": "#004565", "on-secondary": "#ffffff", "on-background": "#131b2e", "secondary-fixed": "#ffdcc3", "outline-variant": "#c5c5d3", "on-surface-variant": "#444651", "on-primary-fixed-variant": "#264191", "secondary-fixed-dim": "#ffb77d", "surface-container-lowest": "#ffffff", "surface-variant": "#dae2fd", "primary-container": "#1e3a8a", "background": "#faf8ff", "on-tertiary-fixed-variant": "#004c6e", "surface-container-low": "#f2f3ff", "surface-container": "#eaedff", "primary-fixed": "#dce1ff", "on-primary": "#ffffff", "on-tertiary-fixed": "#001e2f", "on-tertiary": "#ffffff", "primary-fixed-dim": "#b6c4ff", "surface-tint": "#4059aa", "inverse-surface": "#283044", "surface-dim": "#d2d9f4", "on-surface": "#131b2e", "tertiary-fixed-dim": "#89ceff", "on-secondary-fixed": "#2f1500", "outline": "#757682", "secondary-container": "#fe932c", "surface-container-high": "#e2e7ff", "on-tertiary-container": "#36b6fb" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xl": "2rem", "gutter-tablet": "1.5rem", "margin-desktop": "3rem", "gutter": "1rem", "space-md": "1rem", "space-2xl": "3rem", "gutter-desktop": "2rem", "space-lg": "1.5rem", "margin": "1rem", "space-sm": "0.75rem", "space-2xs": "0.25rem", "margin-tablet": "2rem", "space-xs": "0.5rem" }, "fontFamily": { "headline-md": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "body-md": ["Inter"], "body-lg": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "label-lg": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "data-mono": ["Inter"], "body-sm": ["Inter"], "label-sm": ["Inter"], "display-lg-mobile": ["Plus Jakarta Sans"], "label-md": ["Inter"] }, "fontSize": { "headline-md": ["20px", {"lineHeight": "28px", "fontWeight": "700"}], "title-md": ["16px", {"lineHeight": "22px", "fontWeight": "600"}], "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}], "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}], "headline-sm": ["18px", {"lineHeight": "24px", "fontWeight": "600"}], "display-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800"}], "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}], "headline-lg": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700"}], "data-mono": ["13px", {"lineHeight": "18px", "letterSpacing": "-0.01em", "fontWeight": "500"}], "body-sm": ["13px", {"lineHeight": "18px", "fontWeight": "400"}], "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700"}], "display-lg-mobile": ["26px", {"lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "800"}], "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600"}] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter flex items-center justify-between"><div class="flex items-center gap-space-xs"><img alt="St. John Public School Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrCgk1pYhHfYC5loCyNFF6yZ-o6aXtp-FghKloOrGPCCvqzbiWXnCLZAK62_Dft1RemmJkaNQ8krXP6Fjc0xTBMQEPa0twQX7iX2W0XscfH5d4iirUGNNKrTuMopiWdiTeDcvIlFV7UktDOVkjcVkC6gDxPfMxHehzaiuXCt92TBkDiY-W-R92lDK52MOVIo4dAXGoTJol8yMesLb_vb_YrLFfsIML1dHutvMnDl_lN8"/><div class="flex flex-col"><span class="font-title-md text-title-md text-primary leading-tight line-clamp-1">St. John Public School</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Shukul Bazar, Amethi • CBSE Affiliated</span></div></div><div class="flex items-center gap-space-xs"><a class="hidden sm:flex items-center justify-center h-9 px-3 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-colors min-h-[44px]" data-path="login" href="#">Portal Login</a><a aria-label="Profile Portal" class="flex items-center justify-center p-1 rounded-full hover:bg-surface-container-high transition-colors min-w-[44px] min-h-[44px]" data-path="student-view" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuN0klU9C3iaxhmgP5ERwja6s6Eyf-7Albjj2Cc4ycuNmtWfUKLP4Sxb0K3k82se14_wy6gFo-2jq-o5voYI-VJLHrIMJroKSfLiY6yMGfedALVkmHRvxmHWQfKeZuxV_bqzqNqj-zao_IUsqUFD8yNpxPoT-cB-l1vm6TC4TBLVrNGuXfgX4Y2hz3HdKhQp7rNF7_CdUZN3UZxa21ti1O6u_QlL2ldkTvlnoEC4Q"/></a></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface px-gutter"><div class="flex flex-col w-full gap-space-lg">
+<!-- 1. Admin Master Header & Real-time Institutional Pulse -->
+<div class="relative overflow-hidden rounded-xl bg-primary text-on-primary p-space-md shadow-md">
+<!-- Ambient Academic Pattern SVG -->
+<svg class="absolute right-0 top-0 translate-x-12 -translate-y-8 w-64 h-64 text-on-primary opacity-5 pointer-events-none" fill="currentColor" viewbox="0 0 100 100">
+<circle cx="50" cy="50" fill="none" r="48" stroke="currentColor" stroke-width="2"></circle>
+<path d="M50 10 L50 90 M10 50 L90 50 M22 22 L78 78 M22 78 L78 22" stroke="currentColor" stroke-width="1.5"></path>
+</svg>
+<div class="relative z-10 flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm tracking-wider uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed animate-ping"></span>
+          Master Console
+        </span>
+<span class="font-data-mono text-data-mono text-primary-fixed opacity-90 flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">verified_user</span> Shukul Bazar, Amethi
+        </span>
+</div>
+<div class="mt-1">
+<h1 class="font-headline-lg text-headline-lg text-on-primary">St. John Admin Console</h1>
+<p class="font-body-sm text-body-sm text-surface-container-highest opacity-90">Centralized academic enrollment, OCR digitizer & public portal sync</p>
+</div>
+<!-- Quick Metrics Grid -->
+<div class="grid grid-cols-2 gap-space-xs mt-space-sm pt-space-xs">
+<div class="flex items-center gap-space-xs p-2.5 rounded-lg bg-primary-container text-on-primary">
+<div class="w-8 h-8 rounded-full bg-surface/15 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">groups</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-surface-container-highest">Total Students</span>
+<span class="font-headline-sm text-headline-sm font-bold truncate">1,482</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs p-2.5 rounded-lg bg-primary-container text-on-primary">
+<div class="w-8 h-8 rounded-full bg-surface/15 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-surface-container-highest">Today Attendance</span>
+<span class="font-headline-sm text-headline-sm font-bold truncate text-secondary-fixed-dim">96.1%</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs p-2.5 rounded-lg bg-primary-container text-on-primary">
+<div class="w-8 h-8 rounded-full bg-surface/15 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-surface-container-highest">Staff Active</span>
+<span class="font-headline-sm text-headline-sm font-bold truncate">38</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs p-2.5 rounded-lg bg-primary-container text-on-primary">
+<div class="w-8 h-8 rounded-full bg-surface/15 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">mark_email_unread</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-surface-container-highest">New Inquiries</span>
+<span class="font-headline-sm text-headline-sm font-bold truncate text-tertiary-fixed">19</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 2. Multi-Mode Student Registration Hub -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary">how_to_reg</span>
+          Student Registration Hub
+        </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Switch ingestion modes for instant verification & ID creation</p>
+</div>
+</div>
+<!-- Segmented Filter Pills -->
+<div class="flex items-center gap-space-xs p-1 bg-surface-container rounded-xl overflow-x-auto" id="registrationTabButtons">
+<button class="flex-1 min-w-[100px] flex items-center justify-center gap-1 py-2 px-3 rounded-lg font-label-md text-label-md bg-primary text-on-primary shadow-sm transition-all duration-200" id="tabBtn-manual" onclick="switchRegTab('manual')" type="button">
+<span class="material-symbols-outlined text-[18px]">person_add</span> Manual
+      </button>
+<button class="flex-1 min-w-[100px] flex items-center justify-center gap-1 py-2 px-3 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-primary transition-all duration-200" id="tabBtn-bulk" onclick="switchRegTab('bulk')" type="button">
+<span class="material-symbols-outlined text-[18px]">dataset</span> Bulk AI
+      </button>
+<button class="flex-1 min-w-[100px] flex items-center justify-center gap-1 py-2 px-3 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-primary transition-all duration-200" id="tabBtn-ocr" onclick="switchRegTab('ocr')" type="button">
+<span class="material-symbols-outlined text-[18px]">document_scanner</span> Vision OCR
+      </button>
+</div>
+<!-- TAB A: Manual Registration Flow -->
+<div class="flex flex-col gap-space-md p-space-md rounded-xl bg-surface-container-lowest shadow-sm" id="regTab-manual">
+<!-- Live Dynamic ID Preview Card -->
+<div class="flex items-center justify-between p-3.5 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-bold text-headline-sm">
+<span id="previewInitials">ST</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Dynamic System ID</span>
+<span class="font-data-mono text-title-md font-bold text-primary tracking-wide" id="previewIdDisplay">STJ000000</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-highest text-primary font-label-sm text-label-sm flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+          Live Sync
+        </span>
+</div>
+<!-- Registration Form -->
+<div class="flex flex-col gap-space-sm">
+<!-- Full Name -->
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface" for="regFullName">Full Name of Student *</label>
+<div class="relative">
+<input class="w-full h-12 px-3.5 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest" id="regFullName" oninput="updateLiveID()" placeholder="e.g. Rahul Sharma" type="text"/>
+<span class="material-symbols-outlined absolute right-3 top-3 text-outline text-[20px]">person</span>
+</div>
+</div>
+<!-- Date of Birth -->
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface" for="regDob">Date of Birth *</label>
+<div class="relative">
+<input class="w-full h-12 px-3.5 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest" id="regDob" onchange="updateLiveID()" type="date" value="2012-05-14"/>
+</div>
+</div>
+<!-- Class Selection Grid -->
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface" for="regClass">Enrollment Class *</label>
+<div class="relative">
+<select class="w-full h-12 px-3.5 pr-10 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md appearance-none focus:outline-none focus:bg-surface-container-lowest" id="regClass" onchange="handleClassChange()">
+<option value="Nursery">Nursery</option>
+<option value="LKG">LKG</option>
+<option value="UKG">UKG</option>
+<option value="1">Class 1</option>
+<option value="2">Class 2</option>
+<option value="3">Class 3</option>
+<option value="4">Class 4</option>
+<option value="5">Class 5</option>
+<option value="6">Class 6</option>
+<option selected="" value="7">Class 7</option>
+<option value="8">Class 8</option>
+<option value="9">Class 9</option>
+<option value="10">Class 10</option>
+<option value="11">Class 11</option>
+<option value="12">Class 12</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-3 text-outline pointer-events-none text-[20px]">arrow_drop_down</span>
+</div>
+</div>
+<!-- Stream Selector (Shown for Class 9 to 12) -->
+<div class="hidden flex flex-col gap-1.5 p-3 rounded-lg bg-surface-container" id="streamSelectorWrapper">
+<span class="font-label-md text-label-md text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">school</span> Senior Stream Specialization
+          </span>
+<div class="grid grid-cols-2 gap-space-xs">
+<label class="flex items-center gap-2 p-2.5 rounded-lg bg-surface-container-lowest cursor-pointer">
+<input checked="" class="text-primary accent-primary" name="stream" type="radio" value="Science"/>
+<span class="font-label-md text-label-md text-on-surface">Science Stream</span>
+</label>
+<label class="flex items-center gap-2 p-2.5 rounded-lg bg-surface-container-lowest cursor-pointer">
+<input class="text-primary accent-primary" name="stream" type="radio" value="Arts"/>
+<span class="font-label-md text-label-md text-on-surface">Arts Stream</span>
+</label>
+</div>
+</div>
+<!-- Parent Names -->
+<div class="grid grid-cols-1 gap-space-sm sm:grid-cols-2">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface" for="fatherName">Father's Name *</label>
+<input class="w-full h-12 px-3.5 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none" id="fatherName" placeholder="e.g. Ramesh Verma" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface" for="motherName">Mother's Name *</label>
+<input class="w-full h-12 px-3.5 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none" id="motherName" placeholder="e.g. Sunita Devi" type="text"/>
+</div>
+</div>
+<!-- Contact & Admission Date -->
+<div class="grid grid-cols-1 gap-space-sm sm:grid-cols-2">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface" for="contactMobile">WhatsApp Contact *</label>
+<div class="relative">
+<input class="w-full h-12 px-3.5 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none" id="contactMobile" placeholder="+91 98765 43210" type="tel"/>
+<span class="material-symbols-outlined absolute right-3 top-3 text-secondary text-[20px]">chat</span>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface" for="admDate">Admission Date</label>
+<input class="w-full h-12 px-3.5 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none" id="admDate" type="date" value="2025-04-01"/>
+</div>
+</div>
+<!-- Primary Action CTA -->
+<button class="w-full h-12 mt-space-xs rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-sm transition-transform active:scale-[0.98]" onclick="triggerEnrollSuccess()" type="button">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+          Register & Generate Student ID
+        </button>
+</div>
+</div>
+<!-- TAB B: AI Smart Bulk Excel / CSV (Hidden by default) -->
+<div class="hidden flex flex-col gap-space-md p-space-md rounded-xl bg-surface-container-lowest shadow-sm" id="regTab-bulk">
+<!-- File Drop Zone -->
+<div class="flex flex-col items-center justify-center p-6 rounded-xl bg-surface-container-low text-center cursor-pointer hover:bg-surface-container transition-colors">
+<div class="w-14 h-14 rounded-full bg-primary-fixed text-primary flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-[28px]">cloud_upload</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface">Drag & drop roster or click to browse</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Supports standard .xlsx or .csv student registers</span>
+<span class="mt-3 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">
+          Auto-formats: Name, DOB, Parent, Class
+        </span>
+</div>
+<!-- AI Auto-Map Progress & Match Indicator -->
+<div class="flex flex-col gap-2 p-3.5 rounded-lg bg-surface-container">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">auto_awesome</span>
+            AI Auto-Map Columns & Generate IDs
+          </span>
+<span class="px-2 py-0.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm">100% Matched</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-2 overflow-hidden">
+<div class="bg-secondary-container h-2 rounded-full w-full"></div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Validated 142 records. Zero duplicate entries found.</span>
+</div>
+<!-- Mapped Sample Preview Table -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Parsed Queue Preview</span>
+<span class="font-data-mono text-label-sm text-on-surface-variant">Showing 3 of 142</span>
+</div>
+<div class="flex flex-col gap-2">
+<!-- Row 1 -->
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface">Rahul Verma</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-highest text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Ready
+              </span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-data-mono text-data-mono">
+<span>14/05/2012 • Class 7</span>
+<span class="text-primary font-bold">RAH052012</span>
+</div>
+</div>
+<!-- Row 2 -->
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface">Simran Kaur</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-highest text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Ready
+              </span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-data-mono text-data-mono">
+<span>22/11/2008 • Class 11 Science</span>
+<span class="text-primary font-bold">SIM112008</span>
+</div>
+</div>
+<!-- Row 3 -->
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface">Amit Yadav</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-highest text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Ready
+              </span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-data-mono text-data-mono">
+<span>09/01/2010 • Class 9 Arts</span>
+<span class="text-primary font-bold">AMI012010</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Action Confirmation CTA -->
+<button class="w-full h-12 rounded-lg bg-secondary hover:bg-on-secondary-fixed-variant text-on-secondary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-sm transition-transform active:scale-[0.98]" type="button">
+<span class="material-symbols-outlined text-[20px]">cloud_done</span>
+        Confirm & Bulk Enroll 142 Students
+      </button>
+</div>
+<!-- TAB C: AI Vision OCR & Camera Scan (Hidden by default) -->
+<div class="hidden flex flex-col gap-space-md p-space-md rounded-xl bg-surface-container-lowest shadow-sm" id="regTab-ocr">
+<div class="flex flex-col gap-1">
+<span class="font-title-md text-title-md text-on-surface">Physical Register Digitizer</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Point camera directly at paper admission slates or hand-written rosters.</p>
+</div>
+<!-- Dual Scan Triggers -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-xs">
+<button class="h-12 px-4 rounded-lg bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-2 shadow-sm active:scale-[0.98]" type="button">
+<span class="material-symbols-outlined text-[20px]">photo_camera</span>
+          Open Camera (Scan Physical Register)
+        </button>
+<button class="h-12 px-4 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md flex items-center justify-center gap-2 active:scale-[0.98]" type="button">
+<span class="material-symbols-outlined text-[20px]">image</span>
+          Select from Gallery
+        </button>
+</div>
+<!-- Scanned Ledger Mockup with Bounding Box Overlays -->
+<div class="relative w-full rounded-xl overflow-hidden bg-on-background aspect-[4/3] flex items-center justify-center">
+<!-- Background Ledger Photo -->
+<img class="absolute inset-0 w-full h-full object-cover opacity-60" data-alt="Close up photograph of a vintage hand written school admission ledger paper with organized table rows written in blue ink on yellowish paper under balanced desk lamp illumination" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkjhg92D5228_Z1w7gzG3pvpLSbBNxGYt3kA01ImuQh-a1K47YyXhvZ2cl0QZxAxJToIID3uZs46Y-gdmTCuX2KjiowXKSEWI0Crywl786ubYSzSnsQfhvmOIJDYcU2HhY89HJ8ryuULfCNUzqwoAh0SWJVN7ird0T4he_rUedTlsaaw_tbFS5mjArBiDditt_vMyBmn5m3OjacfJTsaCuzGijulgUgi70WuYEIaw"/>
+<!-- Ambient Scanning Laser Effect -->
+<div class="absolute inset-x-0 top-1/3 h-0.5 bg-secondary-container shadow-[0_0_12px_#fe932c] animate-pulse"></div>
+<!-- Bounding Box Overlays -->
+<div class="absolute top-12 left-6 right-16 p-2 rounded bg-primary/40 backdrop-blur-xs flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary-fixed font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">auto_awesome</span> OCR DETECT: Name
+          </span>
+<span class="font-data-mono text-data-mono text-on-primary font-bold">AARAV K. GUPTA</span>
+</div>
+<div class="absolute top-28 left-6 w-48 p-2 rounded bg-primary/40 backdrop-blur-xs flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary-fixed font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">calendar_today</span> OCR DETECT: DOB
+          </span>
+<span class="font-data-mono text-data-mono text-on-primary font-bold">18-08-2011</span>
+</div>
+<div class="absolute bottom-8 left-6 right-8 p-2 rounded bg-tertiary/60 backdrop-blur-xs flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-tertiary-fixed">Parent: Dinesh Gupta</span>
+<span class="font-data-mono text-label-sm text-on-primary">Target ID: AAR082011</span>
+</div>
+<button class="px-3 py-1 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold shadow-sm" type="button">
+            Import Row
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- 3. Public Content CMS Manager -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary">campaign</span>
+          Public Portal CMS
+        </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Update parents & community mobile feeds in real time</p>
+</div>
+<!-- Instant Sync Toggle -->
+<div class="flex items-center gap-2 p-1.5 px-3 rounded-full bg-surface-container">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Live App Sync</span>
+<button aria-checked="true" class="w-10 h-6 bg-primary rounded-full relative p-0.5 flex items-center transition-colors" role="switch" type="button">
+<span class="w-5 h-5 bg-on-primary rounded-full transition-transform translate-x-4 shadow-sm"></span>
+</button>
+</div>
+</div>
+<!-- CMS Sub-section Tabs -->
+<div class="flex gap-2 border-b-0 overflow-x-auto pb-1" id="cmsTabs">
+<button class="px-3 py-1.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md" id="cmsBtn-notices" onclick="switchCmsTab('notices')" type="button">Notices & Circulars</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md" id="cmsBtn-toppers" onclick="switchCmsTab('toppers')" type="button">Toppers Showcase</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md" id="cmsBtn-gallery" onclick="switchCmsTab('gallery')" type="button">Campus Gallery</button>
+</div>
+<!-- CMS Panel: Notices -->
+<div class="flex flex-col gap-space-sm p-space-md rounded-xl bg-surface-container-lowest shadow-sm" id="cmsPanel-notices">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface">Active Circulars</span>
+<button class="h-8 px-2.5 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm flex items-center gap-1 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span> Post Notice
+        </button>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex items-start justify-between p-3 rounded-lg bg-surface-container-low">
+<div class="flex flex-col gap-0.5">
+<span class="font-title-md text-title-md text-on-surface">CBSE Board Exam Hall Tickets Ready</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Class 10 & 12 admit cards available at administrative counter.</span>
+<span class="font-label-sm text-label-sm text-primary mt-1">Issued: Today, 10:30 AM • Pinned</span>
+</div>
+<div class="flex items-center gap-1 shrink-0">
+<button aria-label="Edit" class="w-8 h-8 rounded-full hover:bg-surface-container flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button aria-label="Delete" class="w-8 h-8 rounded-full hover:bg-error-container text-error flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+<div class="flex items-start justify-between p-3 rounded-lg bg-surface-container-low">
+<div class="flex flex-col gap-0.5">
+<span class="font-title-md text-title-md text-on-surface">Annual Sports Day Schedule Finalized</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Inter-house athletic trials start next Tuesday at 8:00 AM.</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Issued: 2 days ago</span>
+</div>
+<div class="flex items-center gap-1 shrink-0">
+<button aria-label="Edit" class="w-8 h-8 rounded-full hover:bg-surface-container flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button aria-label="Delete" class="w-8 h-8 rounded-full hover:bg-error-container text-error flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- CMS Panel: Toppers Showcase (Hidden by default) -->
+<div class="hidden flex flex-col gap-space-sm p-space-md rounded-xl bg-surface-container-lowest shadow-sm" id="cmsPanel-toppers">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface">Academic Merit Highlights</span>
+<button class="h-8 px-2.5 rounded-lg bg-secondary text-on-secondary font-label-sm text-label-sm flex items-center gap-1 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span> Add Topper
+        </button>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-xs">
+<div class="flex items-center gap-3 p-3 rounded-lg bg-surface-container-low">
+<div class="relative w-12 h-12 rounded-full overflow-hidden bg-surface-container-high shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait of an Indian high school girl student with glasses wearing navy blue school tie and white uniform smiling with confidence" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARg9MSKkFoWQdNiaNstXi4ox5SqvuCicBp5t7NoEne369GhynSAnCKy2i8emUHSZV5jO2yk-FGgeLVvJWe8rNBvG9fwvLNAHZH7ZeWhN2Ej0OWfGYQaYX0DnEcLhB74oV-o9G0hVE6_ylefyheg6TPsDrCmdDRGfFvp7l1aWZksty5pnuhCJtqTupKVXcf8Mhlv35oaRnqcPt5dJMmBcuSlpVFfgh-gH3HHyU1Cm0"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface truncate">Pooja Mishra</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Rank 1 • 98.4% (Science)</span>
+<span class="font-data-mono text-label-sm text-on-surface-variant">Class XII • 2024</span>
+</div>
+</div>
+<div class="flex items-center gap-3 p-3 rounded-lg bg-surface-container-low">
+<div class="relative w-12 h-12 rounded-full overflow-hidden bg-surface-container-high shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait of an Indian male high school topper student wearing clean school uniform with a medal smiling warmly against institutional building" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTDsmbS36umr_n9vmS7BGsnsDOBbrbNsjdQfxgBBf_tlDhyXOkafspesOqoJ8jM7WxuSY8cfptLCq8m9vv5wp8oDgq5QN76VpUOtjUrtqaR9rPRuaXR9FAjC0CZYZ3SgTSYxc6UmeCpW0lz_9r39V8yBZNMSJT3VmceOvcD8i2Ni94iaGFgt9m67Tnv0XwHDOCDQt_D29iZ0P5eYG4OYBd25Ke3EjMsJhApsAB7vo"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface truncate">Aditya Pratap</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Rank 2 • 97.2% (Arts)</span>
+<span class="font-data-mono text-label-sm text-on-surface-variant">Class XII • 2024</span>
+</div>
+</div>
+</div>
+</div>
+<!-- CMS Panel: Campus Gallery (Hidden by default) -->
+<div class="hidden flex flex-col gap-space-sm p-space-md rounded-xl bg-surface-container-lowest shadow-sm" id="cmsPanel-gallery">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface">Event & Campus Media</span>
+<button class="h-8 px-2.5 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm flex items-center gap-1 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">upload_file</span> Upload Photo
+        </button>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-2">
+<div class="relative rounded-lg overflow-hidden aspect-video bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Bright modern computer science lab in an Indian public school with students learning on desktop computers under soft daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACunQ48xXuLUw2crwGR_gjIJgLz9hHnW-rtsOPu3xazTJ-ESuh6u6R-851VzXrPqGTn4FgBYrUtHx1IlcHIBJtqaHVfYFwnr3FuTqAfEStu2Id4kbA00PN0sR7CFEOFymH0Sx0oBdWOJkHbS3T9cNaqJraHF16nX41EeMO5-hengcUNKZmmI1-Tv9rYupXlKBosM5jU8gj9xS_krupelCa4-Paa1ZJEXOKkuzEzpM"/>
+<span class="absolute bottom-1 left-1 px-1.5 py-0.5 rounded bg-on-background/70 text-on-primary font-label-sm text-[10px]">IT Lab 2025</span>
+</div>
+<div class="relative rounded-lg overflow-hidden aspect-video bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="School cricket tournament match at a lush green playground in Uttar Pradesh with student spectators cheering enthusiastically" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2s8NYCkn1NbDFgIbQB25tXsQPmOXsRlP-cwLdxA2_KCJ9m9LMJFpfqj_bf2L35S9M7HB_pQKv108virpcdf8gVYaJ7Qe6_il6636R25zn_fhafcfCaFg1ExiNfctuhPNHv7c6nNFtldeTCiXRm6int5Ma8-wvMo6C-yQTXV73iJyYHYyzg7M8CGf0W_1aJIhdoWDEvPQHzN9GakwTgVg8YmtmRiCfOuaJlTZDgrw"/>
+<span class="absolute bottom-1 left-1 px-1.5 py-0.5 rounded bg-on-background/70 text-on-primary font-label-sm text-[10px]">Cricket Cup</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Toast Feedback Element -->
+<div class="fixed bottom-20 left-1/2 -translate-x-1/2 px-4 py-2 rounded-full bg-on-background text-on-primary font-label-md text-label-md shadow-lg pointer-events-none opacity-0 transition-opacity duration-300 z-50 flex items-center gap-1.5" id="adminToast">
+<span class="material-symbols-outlined text-[18px] text-secondary-fixed">check_circle</span>
+<span id="toastMessage">Action completed successfully</span>
+</div>
+</div>
+<script>
+  function updateLiveID() {
+    const nameInput = document.getElementById('regFullName').value.trim();
+    const dobInput = document.getElementById('regDob').value;
+    
+    let prefix = 'STJ';
+    let initials = 'ST';
+    
+    if (nameInput.length >= 3) {
+      prefix = nameInput.substring(0, 3).toUpperCase();
+      const parts = nameInput.split(' ');
+      initials = parts.length > 1 ? (parts[0][0] + parts[1][0]).toUpperCase() : nameInput.substring(0, 2).toUpperCase();
+    } else if (nameInput.length > 0) {
+      prefix = nameInput.padEnd(3, 'X').toUpperCase();
+      initials = nameInput.substring(0, 1).toUpperCase();
+    }
+
+    let dateSuffix = '000000';
+    if (dobInput) {
+      const d = new Date(dobInput);
+      if (!isNaN(d.getTime())) {
+        const month = String(d.getMonth() + 1).padStart(2, '0');
+        const year = String(d.getFullYear());
+        dateSuffix = month + year;
+      }
+    }
+
+    const fullId = prefix + dateSuffix;
+    const previewEl = document.getElementById('previewIdDisplay');
+    const initialsEl = document.getElementById('previewInitials');
+    if (previewEl) previewEl.textContent = fullId;
+    if (initialsEl) initialsEl.textContent = initials;
+  }
+
+  function handleClassChange() {
+    const classVal = document.getElementById('regClass').value;
+    const streamWrapper = document.getElementById('streamSelectorWrapper');
+    const seniorClasses = ['9', '10', '11', '12'];
+    if (seniorClasses.includes(classVal)) {
+      streamWrapper.classList.remove('hidden');
+    } else {
+      streamWrapper.classList.add('hidden');
+    }
+  }
+
+  function switchRegTab(tabName) {
+    const tabs = ['manual', 'bulk', 'ocr'];
+    tabs.forEach(t => {
+      const content = document.getElementById('regTab-' + t);
+      const btn = document.getElementById('tabBtn-' + t);
+      if (t === tabName) {
+        content.classList.remove('hidden');
+        btn.className = 'flex-1 min-w-[100px] flex items-center justify-center gap-1 py-2 px-3 rounded-lg font-label-md text-label-md bg-primary text-on-primary shadow-sm transition-all duration-200';
+      } else {
+        content.classList.add('hidden');
+        btn.className = 'flex-1 min-w-[100px] flex items-center justify-center gap-1 py-2 px-3 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-primary transition-all duration-200';
+      }
+    });
+  }
+
+  function switchCmsTab(cmsName) {
+    const tabs = ['notices', 'toppers', 'gallery'];
+    tabs.forEach(t => {
+      const panel = document.getElementById('cmsPanel-' + t);
+      const btn = document.getElementById('cmsBtn-' + t);
+      if (t === cmsName) {
+        panel.classList.remove('hidden');
+        btn.className = 'px-3 py-1.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md';
+      } else {
+        panel.classList.add('hidden');
+        btn.className = 'px-3 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md';
+      }
+    });
+  }
+
+  function showToast(msg) {
+    const toast = document.getElementById('adminToast');
+    const label = document.getElementById('toastMessage');
+    if (!toast || !label) return;
+    label.textContent = msg;
+    toast.classList.remove('opacity-0');
+    toast.classList.add('opacity-100');
+    setTimeout(() => {
+      toast.classList.remove('opacity-100');
+      toast.classList.add('opacity-0');
+    }, 2800);
+  }
+
+  function triggerEnrollSuccess() {
+    const idVal = document.getElementById('previewIdDisplay').textContent;
+    showToast('Enrolled Student ID: ' + idVal);
+  }
+
+  // Initialize preview on load
+  document.addEventListener('DOMContentLoaded', () => {
+    updateLiveID();
+    handleClassChange();
+  });
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-16 px-space-2xs"><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-2 py-1 text-on-surface-variant transition-colors hover:text-primary" data-path="public-home" href="#"><span class="material-symbols-outlined text-[24px]">school</span><span class="font-label-sm text-label-sm mt-0.5">Public Home</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-2 py-1 text-on-surface-variant transition-colors hover:text-primary" data-path="toppers-&-gallery" href="#"><span class="material-symbols-outlined text-[24px]">emoji_events</span><span class="font-label-sm text-label-sm mt-0.5">Toppers</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-2 py-1 text-on-surface-variant transition-colors hover:text-primary" data-path="student-view" href="#"><span class="material-symbols-outlined text-[24px]">badge</span><span class="font-label-sm text-label-sm mt-0.5">Student View</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-2 py-1 transition-colors text-primary font-bold" data-path="admin-center" href="#"><span class="material-symbols-outlined text-[24px]">admin_panel_settings</span><span class="font-label-sm text-label-sm mt-0.5">Admin Center</span></a></div></nav></body></html>
